@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 42d0a30a6fdb03b44953fcea4f6bfeeb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FuelSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 715
+        width: 360
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09541a4074c844c4b8ef469f7c9bee49
+      internalID: -1861277849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuelSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 712
+        width: 360
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9638d801e12b7d4b9cc2091896f3a19
+      internalID: 239814913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuelSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 715
+        width: 360
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67d4d619a30b6e40bd506762cc46ba2
+      internalID: 1490504420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuelSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 389
+        width: 360
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fb5fed91bdb0d44963ff93b845c687
+      internalID: -1640092091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuelSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 389
+        width: 360
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072ecdf7e8fe43c4dabe3bb084830f50
+      internalID: 979134151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuelSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 389
+        width: 360
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24384b708171a974491ad5755265a095
+      internalID: -1769090477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuelSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 62
+        width: 360
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98acd82651592094d89d7e768b4751fb
+      internalID: 1459541937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuelSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 62
+        width: 360
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd3e6bddb229184e9726f209d4ddbf0
+      internalID: -1003415025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FuelSpriteSheet_0: -1861277849
+      FuelSpriteSheet_1: -1895042476
+      FuelSpriteSheet_10: 1439941987
+      FuelSpriteSheet_11: -542647214
+      FuelSpriteSheet_12: 1914291795
+      FuelSpriteSheet_13: 1490504420
+      FuelSpriteSheet_14: 583046354
+      FuelSpriteSheet_15: -1585876720
+      FuelSpriteSheet_16: -942277233
+      FuelSpriteSheet_17: 1190934312
+      FuelSpriteSheet_18: 599509881
+      FuelSpriteSheet_19: -1567543963
+      FuelSpriteSheet_2: 306304885
+      FuelSpriteSheet_20: 1848884955
+      FuelSpriteSheet_21: -1640092091
+      FuelSpriteSheet_22: 100374809
+      FuelSpriteSheet_23: -2107548950
+      FuelSpriteSheet_24: -1803371650
+      FuelSpriteSheet_25: -372565277
+      FuelSpriteSheet_26: 1804138993
+      FuelSpriteSheet_27: 79666912
+      FuelSpriteSheet_28: 979134151
+      FuelSpriteSheet_29: -1206623293
+      FuelSpriteSheet_3: 1310967468
+      FuelSpriteSheet_30: 1046298505
+      FuelSpriteSheet_31: -265285547
+      FuelSpriteSheet_32: -1121013752
+      FuelSpriteSheet_33: -1777037673
+      FuelSpriteSheet_34: -895751901
+      FuelSpriteSheet_35: -1769090477
+      FuelSpriteSheet_36: 1169770247
+      FuelSpriteSheet_37: 1402687196
+      FuelSpriteSheet_38: -1774650542
+      FuelSpriteSheet_39: 1726779262
+      FuelSpriteSheet_4: 1775425761
+      FuelSpriteSheet_40: -50108312
+      FuelSpriteSheet_41: 1961165103
+      FuelSpriteSheet_42: 1459541937
+      FuelSpriteSheet_43: -790437994
+      FuelSpriteSheet_44: 1824221429
+      FuelSpriteSheet_45: -1886540558
+      FuelSpriteSheet_46: -735796757
+      FuelSpriteSheet_47: -1057211544
+      FuelSpriteSheet_48: -1784711417
+      FuelSpriteSheet_49: -1003415025
+      FuelSpriteSheet_5: 645670964
+      FuelSpriteSheet_50: -454416162
+      FuelSpriteSheet_51: -793863613
+      FuelSpriteSheet_52: 971332436
+      FuelSpriteSheet_53: -1779568867
+      FuelSpriteSheet_54: 1422115406
+      FuelSpriteSheet_55: 1768901458
+      FuelSpriteSheet_6: -940946572
+      FuelSpriteSheet_7: 239814913
+      FuelSpriteSheet_8: 138028895
+      FuelSpriteSheet_9: 359946776
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

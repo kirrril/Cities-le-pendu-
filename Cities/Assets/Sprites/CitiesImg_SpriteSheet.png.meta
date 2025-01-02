@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: e5478bbab7e902c4b91408addb11ba2c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CitiesImg_Paris
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6744
+        width: 1529
+        height: 552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c411eef51ba4bf248a88eead01b07289
+      internalID: 605832637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_Marseille
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6090
+        width: 1529
+        height: 549
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f09b12e7feafba488c96b9f25d76fe2
+      internalID: 2052145789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_Lyon
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5423
+        width: 1529
+        height: 556
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff23d1d56709d7345a8b561467980e26
+      internalID: 1487290978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_Nice
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4766
+        width: 1529
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3438bdb8e42488f4a8fa604f52958a33
+      internalID: -2062317898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_Toulouse
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4102
+        width: 1529
+        height: 552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0649629dfa559f438419f4c5b680729
+      internalID: 1956603092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_Montpellier
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3437
+        width: 1529
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8110fc050ae09e749ac28859811f2744
+      internalID: 1553778757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_Caen
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2780
+        width: 1529
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f3a023303067a4a8d49dc71c6c8eb7
+      internalID: 487836545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_Carcassonne
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2123
+        width: 1529
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0823e3960bf434b9b7c856880b5731
+      internalID: 892323748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_Limoges
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1459
+        width: 1529
+        height: 554
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7363fdf6b6bfa9b43a8e04ec3630a26c
+      internalID: -1913625916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_Bordeaux
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 795
+        width: 1529
+        height: 556
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55fc6cc779f71240a7a443dd5d4409d
+      internalID: 771410837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CitiesImg_NightHighway
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 1529
+        height: 552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4753714c2ba054fb8f82e571196bbf
+      internalID: 1150818402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CitiesImg_Bordeaux: 771410837
+      CitiesImg_Caen: 487836545
+      CitiesImg_Carcassonne: 892323748
+      CitiesImg_Limoges: -1913625916
+      CitiesImg_Lyon: 1487290978
+      CitiesImg_Marseille: 2052145789
+      CitiesImg_Montpellier: 1553778757
+      CitiesImg_Nice: -2062317898
+      CitiesImg_NightHighway: 1150818402
+      CitiesImg_Paris: 605832637
+      CitiesImg_SpriteSheet_1: 2140152025
+      CitiesImg_SpriteSheet_10: 983508781
+      CitiesImg_SpriteSheet_12: 967900936
+      CitiesImg_SpriteSheet_13: -898056469
+      CitiesImg_SpriteSheet_14: 494198935
+      CitiesImg_SpriteSheet_17: -446584022
+      CitiesImg_SpriteSheet_19: -1102735495
+      CitiesImg_SpriteSheet_20: 457934339
+      CitiesImg_SpriteSheet_21: 2053203028
+      CitiesImg_SpriteSheet_23: -956693672
+      CitiesImg_SpriteSheet_24: 166502910
+      CitiesImg_SpriteSheet_26: -624924586
+      CitiesImg_SpriteSheet_28: -1853959469
+      CitiesImg_SpriteSheet_3: 2104117131
+      CitiesImg_SpriteSheet_4: 1172006391
+      CitiesImg_SpriteSheet_5: -1348532184
+      CitiesImg_SpriteSheet_7: 1418858098
+      CitiesImg_SpriteSheet_9: -85770626
+      CitiesImg_Toulouse: 1956603092
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
