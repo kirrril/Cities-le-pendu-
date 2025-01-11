@@ -8,26 +8,23 @@ using System;
 public class Game
 {
     public List<string> playedLetters = new List<string> { };
-    public string cityToGo = "";
+    
+    public string cityToGo
+    {
+        get
+        {
+            return cityInfos.name;
+        }
+    }
+
+    public CityInfos cityInfos;
 
     public int life = 7;
 
-    public string GetRandomCity()
+    public Game(CityInfos cityInfos)
     {
-        List<string> cities = new List<string> { "Paris", "Marseille", "Lyon", "Nice", "Toulouse", "Montpellier", "Caen", "Carcassonne", "Limoges", "Bordeaux" };
-
-        // ScriptableObject
-
-        if (cityToGo == "")
-        {
-            int cityIndex = UnityEngine.Random.Range(0, cities.Count);
-
-            cityToGo = cities[cityIndex];
-        }
-
-        return cityToGo;
+        this.cityInfos = cityInfos;
     }
-
 
     public bool AllLettersGuessed
     {
@@ -43,7 +40,5 @@ public class Game
 
             return true;
         }
-
-
     }
 }

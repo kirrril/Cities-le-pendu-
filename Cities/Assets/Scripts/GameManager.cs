@@ -4,30 +4,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text.RegularExpressions;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+    private AudioController audioController;
+
     public UnityEvent onBadMove, onGoodMove, onAlreadyPlayed;
-    public UnityEvent onGameOver;
     public UnityEvent readyToPlay;
-    public UnityEvent onCityGuessed;
 
     public Game currentGame;
 
     public static GameManager instance;
 
+    public CityDataBase cityDataBase;
+
+    public static bool youWin = false;
+    public static string city;
+
 
     void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
 
     public void LaunchGame()
     {
-        currentGame = new Game();
+        Debug.Log($"Je suis appelé");
 
-        currentGame.cityToGo = currentGame.GetRandomCity();
+        CityInfos cityInfos = cityDataBase.GetRandomCity();
+
+        currentGame = new Game(cityInfos);
 
         currentGame.playedLetters.Clear();
 
@@ -43,8 +59,9 @@ public class GameManager : MonoBehaviour
 
         if (userInput == currentGame.cityToGo.ToUpper())
         {
-            onCityGuessed.Invoke();
-            return;
+            youWin = true;
+
+            LoadGameOverScene();
         }
 
         if (currentGame.playedLetters.Contains(userInput))
@@ -57,23 +74,26 @@ public class GameManager : MonoBehaviour
 
         if (currentGame.AllLettersGuessed)
         {
-            onCityGuessed.Invoke();
-            return;
+            youWin = true;
+
+            LoadGameOverScene();
         }
 
         if (IsGoodMove(userInput))
         {
             currentGame.life--;
             onGoodMove.Invoke();
-            
-        } else
+
+        }
+        else
         {
             currentGame.life--;
 
             if (currentGame.life <= 0)
             {
-                onGameOver.Invoke();
-            } else
+                LoadGameOverScene();
+            }
+            else
             {
                 onBadMove.Invoke();
             }
@@ -90,13 +110,16 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
-
-    public void GameOver()
+    public void LoadGameOverScene()
     {
-        onGameOver.Invoke();
+        SceneManager.LoadScene("GameOver", LoadSceneMode.Additive);
     }
 
-
+    // private IEnumerator CheckScene()
+    // {
+    //     yield return new WaitForSeconds(0.1f);
+    //     // Debug.Log("Scene active : " + SceneManager.GetActiveScene().name);
+    // }
 
 
 }

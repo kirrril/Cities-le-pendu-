@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb24548c407220548a225d6d5ea944e6, type: 3}
+  m_Name: CityDataBase
+  m_EditorClassIdentifier: 
+  cities:
+  - Paris
+  - Marseille
+  - Lyon
+  - Nice
+  - Toulouse
+  - Montpellier
+  - Caen
+  - Carcassonne
+  - Limoges
+  - Bordeaux
+  citiesInfos:
+  - name: Paris
+    imageUri: https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg
+  - name: Marseille
+    imageUri: https://www.interregnextmed.eu/wp-content/uploads/2024/12/marseille-5271931_1920.jpg
