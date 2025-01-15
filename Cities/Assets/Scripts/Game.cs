@@ -21,6 +21,8 @@ public class Game
 
     public int life = 7;
 
+    public bool youWin;
+
     public Game(CityInfos cityInfos)
     {
         this.cityInfos = cityInfos;

@@ -8,7 +8,7 @@ using UnityEngine.Networking;
 public class GetImage : MonoBehaviour
 {
     public Image arrivalCityImg;
-    public IHM_double ihmDouble;
+    public IHM ihm;
 
 
     [SerializeField]

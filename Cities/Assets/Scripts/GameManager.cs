@@ -9,59 +9,52 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    private AudioController audioController;
+    private GameSceneSound gameSceneSound;
 
     public UnityEvent onBadMove, onGoodMove, onAlreadyPlayed;
     public UnityEvent readyToPlay;
 
     public Game currentGame;
+    
 
     public static GameManager instance;
 
     public CityDataBase cityDataBase;
 
-    public static bool youWin = false;
-    public static string city;
-
 
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
+    }
+
+    void Start()
+    {
+        LaunchGame();
+        gameSceneSound.EngineSound();
     }
 
 
     public void LaunchGame()
     {
-        Debug.Log($"Je suis appelé");
-
         CityInfos cityInfos = cityDataBase.GetRandomCity();
 
         currentGame = new Game(cityInfos);
 
         currentGame.playedLetters.Clear();
-
-        readyToPlay.Invoke();
     }
 
 
     public void OnLetterPlayed(string userInput)
     {
+        gameSceneSound.AccelerateSound();
+
         if (string.IsNullOrEmpty(userInput)) return;
 
         userInput = userInput.ToUpper();
 
         if (userInput == currentGame.cityToGo.ToUpper())
         {
-            youWin = true;
-
-            LoadGameOverScene();
+            currentGame.youWin = true;
         }
 
         if (currentGame.playedLetters.Contains(userInput))
@@ -74,9 +67,7 @@ public class GameManager : MonoBehaviour
 
         if (currentGame.AllLettersGuessed)
         {
-            youWin = true;
-
-            LoadGameOverScene();
+            currentGame.youWin = true;
         }
 
         if (IsGoodMove(userInput))
@@ -88,15 +79,12 @@ public class GameManager : MonoBehaviour
         else
         {
             currentGame.life--;
+            onBadMove.Invoke();
+        }
 
-            if (currentGame.life <= 0)
-            {
-                LoadGameOverScene();
-            }
-            else
-            {
-                onBadMove.Invoke();
-            }
+        if (currentGame.youWin || currentGame.life <= 0)
+        {
+            StartCoroutine(LoadGameOverScene());
         }
 
         readyToPlay.Invoke();
@@ -110,16 +98,9 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
-    public void LoadGameOverScene()
+    IEnumerator LoadGameOverScene()
     {
-        SceneManager.LoadScene("GameOver", LoadSceneMode.Additive);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("GameOver");
     }
-
-    // private IEnumerator CheckScene()
-    // {
-    //     yield return new WaitForSeconds(0.1f);
-    //     // Debug.Log("Scene active : " + SceneManager.GetActiveScene().name);
-    // }
-
-
 }

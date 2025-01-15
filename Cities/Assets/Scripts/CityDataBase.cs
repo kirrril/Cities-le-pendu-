@@ -6,9 +6,6 @@ using UnityEngine;
 public class CityDataBase : ScriptableObject
 {
     [SerializeField]
-    List<string> cities = new List<string> { "Paris", "Marseille", "Lyon", "Nice", "Toulouse", "Montpellier", "Caen", "Carcassonne", "Limoges", "Bordeaux" };
-
-    [SerializeField]
     List<CityInfos> citiesInfos;
 
 
@@ -28,4 +25,3 @@ public class CityInfos
 
     public string imageUri;
 }
-

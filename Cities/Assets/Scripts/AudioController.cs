@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioController : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class AudioController : MonoBehaviour
     private AudioSource engineSound;
     [SerializeField]
     private AudioSource eventSound;
+    [SerializeField]
+    private AudioSource musicSound;
 
     [SerializeField]
     private AudioClip exterior;
@@ -22,11 +25,29 @@ public class AudioController : MonoBehaviour
     [SerializeField]
     private AudioClip engine;
     [SerializeField]
-    private AudioClip gasUp;
-    [SerializeField]
     private AudioClip handBrake;
     [SerializeField]
     private AudioClip horn;
+    [SerializeField]
+    private AudioClip music;
+    
+
+    public static AudioController instance;
+
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else
+        {
+            Destroy(gameObject);
+        }
+        
+    }
+
 
     void Start()
     {
@@ -39,7 +60,7 @@ public class AudioController : MonoBehaviour
         outdoorSound.clip = exterior;
         outdoorSound.loop = true;
         outdoorSound.Play();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         eventSound.clip = door;
         eventSound.Play();
         outdoorSound.volume = 0.2f;
@@ -48,33 +69,38 @@ public class AudioController : MonoBehaviour
         eventSound.Play();
     }
 
-    public void SoundStart()
+    public void StartSound()
     {
         eventSound.clip = start;
         eventSound.Play();
+        // engineSound.clip = engine;
+        // engineSound.loop = true;
+        
+        // engineSound.volume = 1.0f;
+    }
+
+    public void EngineSound()
+    {
         engineSound.clip = engine;
-        engineSound.loop = true;
         engineSound.Play();
-        engineSound.volume = 1.0f;
     }
 
     public void AccelerateSound()
     {
-        eventSound.clip = horn;
-        eventSound.volume = 1.0f;
-        eventSound.Play();
-        // StartCoroutine(GasUp());
+        // eventSound.clip = horn;
+        // eventSound.volume = 1.0f;
+        // eventSound.Play();
     }
 
-    public IEnumerator GasUp()
-    {
-        eventSound.clip = engine;
-        eventSound.volume = 5.0f;
-        eventSound.Play();
-        
-        yield return new WaitForSeconds(1);
+    // public IEnumerator GasUp()
+    // {
+    //     eventSound.clip = engine;
+    //     eventSound.volume = 5.0f;
+    //     eventSound.Play();
 
-        engineSound.volume = 1.0f;
-    }
+    //     yield return new WaitForSeconds(1);
+
+    //     engineSound.volume = 1.0f;
+    // }
 
 }
