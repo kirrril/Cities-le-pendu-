@@ -3,45 +3,47 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Script pour gérer le son de la scène GameOver
 public class GameOverSound : MonoBehaviour
 {
-    [SerializeField]
-    private AudioSource eventSound;
-    [SerializeField]
-    private AudioSource musicSound;
+    // Références aux audio sources de la scène
     [SerializeField]
     private AudioSource outdoorSound;
-
     [SerializeField]
-    private AudioClip start;
+    private AudioSource handBrakeSound;
     [SerializeField]
-    private AudioClip handBrake;
+    private AudioSource hornSound;
     [SerializeField]
-    private AudioClip horn;
-    [SerializeField]
-    private AudioClip music;
+    private AudioSource startSound;
 
 
-    public IEnumerator ArrivalSound()
+    // Jouer une suite sonore au chargement de la scène
+    void Start()
     {
-        eventSound.clip = handBrake;
-        eventSound.Play();
-        yield return new WaitForSeconds(0.5f);
-        eventSound.clip = horn;
-        eventSound.Play();
-        yield return new WaitForSeconds(0.5f);
-        eventSound.clip = horn;
-        eventSound.Play();
-        yield return new WaitForSeconds(0.5f);
-        eventSound.clip = horn;
-        eventSound.Play();
+        StartCoroutine(ArrivalSound());
     }
 
 
+    // La suite sonore d'arrivée, la même pour la victoire et la défaite
+    private IEnumerator ArrivalSound()
+    {   
+        handBrakeSound.Play();
+        yield return new WaitForSeconds(0.01f);
+        outdoorSound.loop = true;
+        outdoorSound.Play();
+        yield return new WaitForSeconds(1);
+        hornSound.Play();
+        yield return new WaitForSeconds(0.5f);
+        hornSound.Play();
+        yield return new WaitForSeconds(0.5f);
+        hornSound.Play();
+    }
+
+
+    // Son du bouton de démarrage
     public void StartSound()
     {
-        eventSound.clip = start;
-        eventSound.Play();
+        startSound.Play();
     }
 
 }

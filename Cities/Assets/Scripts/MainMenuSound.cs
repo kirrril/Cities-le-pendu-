@@ -3,41 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// Script pour gérer le son de la scène MainMenu
 public class MainMenuSound : MonoBehaviour
 {
+    // Références aux audio sources de la scène
     [SerializeField]
     private AudioSource outdoorSound;
     [SerializeField]
-    private AudioSource eventSound;
+    private AudioSource doorSound;
+    [SerializeField]
+    private AudioSource beltSound;
+    [SerializeField]
+    private AudioSource startSound;
 
-    [SerializeField]
-    private AudioClip exterior;
-    [SerializeField]
-    private AudioClip door;
-    [SerializeField]
-    private AudioClip belt;
-    [SerializeField]
-    private AudioClip start;
-
-
-    public IEnumerator GetInTheCar()
+    // La suite sonore de la scène est jouée à son chargement
+    void Start()
     {
-        outdoorSound.clip = exterior;
-        outdoorSound.loop = true;
-        outdoorSound.Play();
-        yield return new WaitForSeconds(0.1f);
-        eventSound.clip = door;
-        eventSound.Play();
-        outdoorSound.volume = 0.2f;
-        yield return new WaitForSeconds(1);
-        eventSound.clip = belt;
-        eventSound.Play();
+        StartCoroutine(GetInCar());
     }
 
+    // La coroutine de la suite sonore de la scène
+    IEnumerator GetInCar()
+    {
+        outdoorSound.loop = true;
+        outdoorSound.Play();
+        yield return new WaitForSeconds(1.0f);
+        doorSound.Play();
+        outdoorSound.volume = 0.1f;
+        yield return new WaitForSeconds(2.0f);
+        beltSound.Play();
+    }
+
+    // Le son de démarrage est joué en appuyant le bouton Start
     public void StartSound()
     {
-        eventSound.clip = start;
-        eventSound.Play();
+        startSound.Play();
     }
 
 }
